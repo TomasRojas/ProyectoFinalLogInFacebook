@@ -31,9 +31,9 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_main);
 
-        FacebookSdk.sdkInitialize(getApplicationContext());
         getFBKeyHash("RMDHgysFdxcL6nq0qww4OAyxaWw=");
 
         mCallbackManager = CallbackManager.Factory.create();
